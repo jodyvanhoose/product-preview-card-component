@@ -15,7 +15,8 @@ body{
 .card{
   width: 93%;
   margin: 1.5em auto;
-  
+  background-color: #fff;
+  border-radius: 12px;
 }
 
 .desktop-img{
@@ -26,10 +27,15 @@ body{
   width: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  margin-bottom: 0;
 }
 
 .card-description{
   padding: 1.5em;
+  margin-top: 0;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .card-description h1, .card-description p, .original-price, .cart-btn{
@@ -70,20 +76,20 @@ body{
 
 .sale-price{
   color: hsl(158, 36%, 37%);
-  font-size: 2rem;
+  font-size: 2.1rem;
   display: inline;
-  padding-right: 1em;
+  padding-right: .6em;
 }
 
 .original-price{
   display: inline;
-  font-size: .8rem;
+  font-size: .9rem;
   text-decoration: line-through
 }
 
 .cart-btn{
   width: 100%;
-  padding: 1em 0;
+  padding: 1.5em 0;
   color: #fff;
   background-color: hsl(158, 36%, 37%);
   border: none;
@@ -101,5 +107,98 @@ body{
 .cart-text{
   padding-left: .8em;
   font-size: .9rem;
-  letter-spacing: 1px;
+  /* letter-spacing: .8px; */
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+/* Desktop Styles */
+@media (min-width: 501px){
+  .desktop-img{
+    display: block;
+    width: 25%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    flex: 1;
+  }
+  
+  .mobile-img{
+    display: none;
+  }
+
+  .card{
+    margin: 25vh auto 1em auto;
+    display: flex;
+    width: 35%;
+    border-radius: 12px;
+  }
+
+  .description-container{
+    width: 50%;
+  }
+
+  .card-description{
+    padding: 1.2em;
+    /* width: 100%; */
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 12px;
+    
+  }
+
+  .card-description h1{
+    font-size: .7rem;
+    padding: 1.3em 0 1.7em 0;
+    letter-spacing: 4px;
+  }
+
+  .card-description h2{
+    font-size: 1.9rem;
+    line-height: 1;
+    padding-bottom: .7em;
+  }
+
+  .card-description p{
+    font-size: .8rem;
+    line-height: 1.8;
+  }
+
+  .sale-price{
+    font-size: 1.9rem;
+  }
+
+  .original-price{
+    font-size: .7rem;
+  }
+
+  .price{
+    padding: 1em 0 1em 0;
+
+  }
+
+  .cart-btn{
+  width: 100%;
+  padding: .8em 0;
+  margin: 1.2em 0 1.2em 0;
+  color: #fff;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  }
+
+  .cart-text{
+    padding-left: .8em;
+    font-size: .7rem;
+    letter-spacing: .8px;
+  }
+  
 }
