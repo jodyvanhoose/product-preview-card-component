@@ -19,6 +19,8 @@ body{
   border-radius: 12px;
 }
 
+/* Image */
+
 .desktop-img{
   display: none;
 }
@@ -30,8 +32,10 @@ body{
   margin-bottom: 0;
 }
 
+/* Card Description */
+
 .card-description{
-  padding: 1.5em;
+  padding: 1.4em;
   margin-top: 0;
   background-color: #fff;
   border-bottom-left-radius: 12px;
@@ -58,8 +62,8 @@ body{
 }
 
 .card-description h2{
-  font-size: 2.1rem;
-  padding-bottom: .4em;
+  font-size: 2rem;
+  padding-bottom: .6em;
   line-height: 1;
 }
 
@@ -87,15 +91,21 @@ body{
   text-decoration: line-through
 }
 
+/* Button */
 .cart-btn{
   width: 100%;
-  padding: 1.5em 0;
+  padding: 1.2em 0;
   color: #fff;
   background-color: hsl(158, 36%, 37%);
   border: none;
   border-radius: 8px;
   font-weight: 700;
   margin-top: 1em;
+  cursor: pointer;
+}
+
+.cart-btn:is(:hover, :focus){
+  background-color: hsl(158, 35%, 18%);
 }
 
 .cart{
@@ -121,7 +131,9 @@ body{
 
 
 /* Desktop Styles */
-@media (min-width: 501px){
+@media (min-width: 1205px){
+
+  /* Image */
   .desktop-img{
     display: block;
     width: 25%;
@@ -142,16 +154,15 @@ body{
     border-radius: 12px;
   }
 
+  /* Description */
   .description-container{
     width: 50%;
   }
 
   .card-description{
     padding: 1.2em;
-    /* width: 100%; */
     border-bottom-left-radius: 0;
     border-top-right-radius: 12px;
-    
   }
 
   .card-description h1{
@@ -184,20 +195,21 @@ body{
 
   }
 
+
+  /* Button */
   .cart-btn{
   width: 100%;
-  padding: .8em 0;
+  padding: 1.1em 0;
   margin: 1.2em 0 1.2em 0;
   color: #fff;
   background-color: hsl(158, 36%, 37%);
   border: none;
   border-radius: 8px;
-  font-weight: 700;
   }
 
   .cart-text{
     padding-left: .8em;
-    font-size: .7rem;
+    font-size: .8rem;
     letter-spacing: .8px;
   }
   
